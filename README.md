@@ -1,10 +1,12 @@
 # ownpage
 
-Trivial CMS
-Uses contenteditable for editing
-Statically rendered
-Admin features use TS, JSX
-Postgres DB
+Trivial CMS  
+Uses contenteditable for editing  
+Statically rendered  
+Admin features use TS, JSX  
+Postgres DB  
+Register, login, bcrypt passwords, cookie sessions
+CRUD Posts, Events, Pages, Site
 
 
 ![ownpage screnshot](/ownpage.png)
@@ -22,5 +24,4 @@ esbuild static/ts/main.tsx --bundle --outfile=static/js/main.js --sourcemap --wa
 sass ./static/scss/main.scss ./static/css/main.css --watch
 ```
 
-## Docs:
 
