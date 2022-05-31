@@ -1,0 +1,12 @@
+{{define "main-menu" }}
+
+<nav class="main-menu">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/events">Events</a></li>
+    {{ range .Pages }} {{ template "main-menu-item" . }} {{ end }}
+    <!-- <li><a href="/login">Login</a></li> -->
+  </ul>
+</nav>
+
+{{end}}

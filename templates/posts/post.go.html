@@ -1,0 +1,11 @@
+{{define "post"}}
+<div class="post card" data-id="{{.Id}}">
+  <div class="body" data-field="body">{{.Body}}</div>
+  <div class="date">{{.UpdatedAt | toDisplayTime }}</div>
+
+  <!-- <div class="controls">
+    <a href="#" class="edit">E</a>
+    <a href="#" class="remove">X</a>
+  </div> -->
+</div>
+{{end}}

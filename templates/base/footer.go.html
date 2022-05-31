@@ -1,0 +1,11 @@
+{{ define "footer" }}
+<footer>
+  &copy; 2022 {{ if .SessionId }}
+  <a href="/logout">logout {{ .SessionId }}</a>
+  {{ else }}
+  <a href="/register">register</a>
+  <a href="/login">login</a>
+  {{end}}
+  <script src="/js/main.js?q={{randomInt 0 100000}}"></script>
+</footer>
+{{end}}

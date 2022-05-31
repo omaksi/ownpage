@@ -1,0 +1,153 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+}
+
+.hidden {
+    height: 0;
+    width: 0;
+}
+
+.wrapper {
+    width: 600px;
+    /* min-height: 100vh; */
+    margin: 0 auto;
+    padding: 0;
+}
+
+.main-menu {
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    
+        li {
+            display: inline-block;
+            margin: 0 12px 0 0;
+            padding: 0;
+    
+            a {
+                text-decoration: none;
+                color: #333;
+            }   
+            
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+
+form {
+    padding-top: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    font-size: 14px;
+}
+
+
+header, .page {
+    padding:16px;
+}
+
+
+footer {
+    margin: 24px 0;
+    text-align: center;
+}
+
+.card {
+    padding: 8px 16px;
+    margin: 8px 0;
+    background-color: rgb(243, 247, 255);
+}
+
+
+.date {
+    font-size: 10px;
+    color: #aaa;
+}
+
+.body {
+    font-size: 18px;
+}
+
+
+header, .post, .event, .page {
+    position: relative;
+}
+
+.post-add {
+    background-color: #eee;
+    .input {
+        width: 100%;
+    }
+}
+
+.post:hover .controls, header:hover .controls{
+    display: block;
+}
+
+
+.controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    // display: none;
+    font-size: 18px;
+    z-index: 100;
+    // background-color: #fff;
+    // padding: 8px;
+
+    a {
+        color: #666;
+        text-decoration: none;
+        margin-right: 8px;
+
+        &:hover {
+            color: rgb(51, 51, 54);
+        }
+
+        .fa-check-circle-o {
+            color: green;
+        }
+
+        .fa-times-circle-o{
+            color: red;
+        }
+    }
+    
+}
+
+.editable {
+    position: relative;
+    outline: 3px solid #ddd;
+
+    // &:hover .controls{
+    //     display: block;
+    // }
+    
+    // &.editing .controls{
+    //     display: block;
+    // }
+}
+
+
+
+

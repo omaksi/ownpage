@@ -1,0 +1,7 @@
+{{ define "content" }}
+
+<main>
+  <div class="events">{{range .Events}} {{template "event" .}} {{end}}</div>
+</main>
+
+{{ end }}

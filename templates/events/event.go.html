@@ -1,0 +1,7 @@
+{{ define "event" }}
+<div class="event card">
+  <div class="title">{{ .Title }}</div>
+  <div class="body">{{ .Body }}</div>
+  <div class="date">{{ .EventDate | toDisplayTime }}</div>
+</div>
+{{ end }}

@@ -1,0 +1,8 @@
+{{define "content"}}
+<main>
+  {{if .Id }}
+  <p>Welcome {{.Id}}</p>
+  {{end}}
+  <div class="posts">{{range .Posts}} {{template "post" .}} {{end}}</div>
+</main>
+{{end}}

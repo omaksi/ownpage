@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/main.css?q={{randomInt 0 100000}}" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    {{ template "title" .}}
+  </head>
+  <body data-logged-in="{{.SessionId}}">
+    <div class="wrapper">
+      {{template "header" .}} {{ template "main-menu" . }} {{ template "content" .}} {{ template
+      "footer" .}}
+    </div>
+  </body>
+</html>
