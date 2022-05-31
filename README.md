@@ -1,12 +1,12 @@
 # ownpage
 
 Trivial CMS  
-Uses contenteditable for editing  
-Statically rendered  
+Statically rendered with Go Templates  
 Admin features use TS, JSX  
+Uses contenteditable for editing  
 Postgres DB  
-Register, login, bcrypt passwords, cookie sessions
-CRUD Posts, Events, Pages, Site
+Register, login, bcrypt passwords, cookie sessions  
+CRUD Posts, Events, Pages, Site  
 
 
 ![ownpage screnshot](/ownpage.png)
